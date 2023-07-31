@@ -18,7 +18,8 @@
 
 *, *::after, *::before {
     box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
 }
 
 /* Typography */
@@ -54,7 +55,7 @@ body {
 p{
     
     font-size: 1.8rem; /* 18px */
-    color: var(--color-lavender);;
+    color: var(--color-lavender);
     margin: 0;
 }
 
@@ -64,6 +65,10 @@ p{
 
 .white {
     color: var(--color-white);
+}
+
+.lavender {
+    color: var(--color-lavender);
 }
 
 
@@ -173,3 +178,34 @@ p{
     align-items: center;
     
 }
+
+/* Result */
+
+.result{
+    background: linear-gradient(var(--grad-slate-blue), var(--grad-royal-blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 2rem 2rem; 
+}
+
+.result__text{
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 58%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+          
+}
+
+/* Summary */
+
+.summary {
+    padding: 0 3rem;
+}
+
+
