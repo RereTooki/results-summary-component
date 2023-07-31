@@ -22,7 +22,22 @@
     padding: 0;
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 /* Typography */
+
+::selection {    
+    color: #fff;
+    background: grey;
+}
 
 html{
     /*62.5% of 16px = 10px*/
@@ -147,15 +162,13 @@ p{
     border: 0;
     color: var(--color-white);
     cursor: pointer;
-    cursor: pointer;
     display: inline-block;
     font-size: 1.5rem;
-    margin-top: auto;
+    margin-top: 2rem;
     padding: 1rem;
     white-space: nowrap;
     width: 100%;
-    padding: 2rem 1rem;
-    margin-top: 2.5rem;
+    padding: 2rem 1rem;  
     
 }
 
@@ -190,6 +203,8 @@ p{
     border-radius: 0 0 2rem 2rem; 
 }
 
+
+
 .result__text{
     margin-bottom: 3rem;
     text-align: center;
@@ -208,4 +223,50 @@ p{
     padding: 0 3rem;
 }
 
+@media screen and (min-width: 768px) {
+    .card{
+        display: flex;
+        flex-direction: row;     
+        
+    }
+    .result{
+        width: 50%;
+        
+        border-radius: 2rem; 
+    }
+    .summary{
+        width: 50%;
+        
+    }
+    
+    .card--container {
+        max-width: 650px; 
+        max-height: auto;       
+        border-radius: 2rem;        
+        background: var(--color-white);
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        height: 100vh;
+        background: var(--color-pale-blue);
+    }
 
+    .result__text{
+        margin-bottom: 3rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .badge {    
+        margin-bottom: 1rem;        
+        padding: 1rem 1rem;    
+        
+    }
+
+    .btn {
+        padding: 1.5rem;
+    }
+
+}
