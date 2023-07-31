@@ -56,10 +56,11 @@ p{
 }
 
 
+
 /* Badges */
 
-.badge {
-    
+.badge {    
+    margin-bottom: 1.5rem;
     display: flex;
     border-radius: 15px;
     padding: 1rem 1rem;    
@@ -79,13 +80,28 @@ p{
     align-items: center;
 }
 
-.badge--one{
-    background: hsla(0, 100%, 67%, 0.2);
+.badge h2 {    
+    margin-left: .6rem;
 }
 
-.badge--one h2 {
+.badge--one{
+    background: hsla(0, 100%, 67%, 0.1);
     color: var(--color-red); 
-    margin-left: .6rem;
+}
+
+.badge--two{
+    background: hsla(39, 100%, 56%, 0.1);
+    color: var(--color-orange); 
+}
+
+.badge--three{
+    background: hsla(166, 100%, 37%, 0.1);
+    color: var(--color-green); 
+}
+
+.badge--four{
+    background: hsla(234, 85%, 45%, 0.1);
+    color: var(--color-cblue); 
 }
 
 .score--normal{
@@ -99,5 +115,25 @@ p{
 }
 
 
+/* Buttons */
+
+.btn{
+    
+    border: 0;
+    white-space: nowrap;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: auto;
+    padding: 1rem;
+    width: auto;
+    background: var(--color-dgray-blue);
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.btn:hover{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
 
 
