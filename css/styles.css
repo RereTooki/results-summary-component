@@ -240,8 +240,7 @@ p{
     }
     
     .card--container {
-        max-width: 650px; 
-        max-height: auto;       
+        max-width: 650px;              
         border-radius: 2rem;        
         background: var(--color-white);
     }
